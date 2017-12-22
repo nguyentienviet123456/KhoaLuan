@@ -1,4 +1,4 @@
-<div class="container " style="padding-top: 10px">
+<div class="container " style="padding-top: 100px">
   <div class="center row" >
     <div class="row">
       <div class="col-md-5"></div>
@@ -7,7 +7,7 @@
       </div>
       <div class="col-md-5"></div>
     </div>
-    <div id="headline" style="padding-top: 20px">
+    <!--<div id="headline" style="padding-top: 20px">
       University of Enginerrings and Technologies
     </div>
     <br/>
@@ -17,9 +17,9 @@
           <h1 class="text-blue">Question And Answering</h1>
       </div>
       <div class="col-md-3"></div>
-    </div>
+    </div>-->
   </div>
-  <div id="info">
+  <!--<div id="info">
     <p data-ng-show="infoStart">Click on the microphone icon and begin speaking.</p>
     <p data-ng-show="infoSpeechNow">Speak now.</p>
     <p data-ng-show="infoNoSpeech">No speech was detected. You may need to adjust your
@@ -35,22 +35,52 @@
     <p data-ng-show="infoUpgrade">Web Speech API is not supported by this browser. Upgrade to <a href="//www.google.com/chrome">Chrome</a> version 25 or
       later.
     </p>
-  </div>
-  <div class="row">
+  </div>-->
+  <div class="row" style="padding: 50px">
     <div class="row">
-      <div id="results" class="col-md-6">
-        <div class="left">
-          <buttongi>
-            <img class="img-circle" style="border-radius: 50%" ng-src="{{srcImage}}" alt="Start" ng-click="startButton($event)">
-          </button>
+      
+        <div id="results" class="col-md-12">
+            <p>
+                <h2>NOTE</h2>
+                <p>Since Chrome version 47, Voice Recording works only on HTTPS sites. You can see the demo on HTTPS <a href="https://demos.subinsb.com/jquery/voice/">here</a>.</p>
+            </p>
+            <h2>Record</h2>
+            <audio controls id="audio"></audio>
+            <div id="results" class="row">
+                <!--<div class="left">
+                    <buttongi>
+                        <img class="img-circle" style="border-radius: 50%" ng-src="{{srcImage}}" alt="Start" ng-click="startButton($event)">
+                        </button>
+                </div>-->
+                <div id="final_span" data-ng-model="final_transcript" class="final" style="height: 3px"></div>
+            </div>
+            <div style="padding-top: 10px">
+                <a class="button recordButton" id="record">Record</a>
+                <a class="button recordButton" id="recordFor5">Record For 5 Seconds</a>
+                <a class="button disabled one" id="pause">Pause</a>
+                <a class="button disabled one" id="stop">Reset</a>
+            </div>
+            <div>
+                <input class="button" type="checkbox" id="live" />
+                <label for="live">Live Output</label>
+            </div>
+            <div data-type="wav">
+                <p>WAV Controls:</p>
+                <a class="button disabled one" id="play">Play</a>
+                <a class="button disabled one" id="download">Download</a>
+                <a class="button disabled one" id="base64">Base64 URL</a>
+                <a class="button disabled one" id="save">Upload to Server</a>
+            </div>
+            <div data-type="mp3">
+                <p>MP3 Controls:</p>
+                <a class="button disabled one" id="play">Play</a>
+                <a class="button disabled one" id="download">Download</a>
+                <a class="button disabled one" id="base64">Base64 URL</a>
+                <a class="button disabled one" id="save">Upload to Server</a>
+            </div>
+            <canvas id="level" height="200" width="500"></canvas>
         </div>
-        <div  id="final_span" data-ng-model="final_transcript" class="final" style="height: 3px"></div>
-        <hr style="color: #281758;
-        background-color: #241B70;
-        height: 1px;">
-        <input class="w3-input" type="text" data-ng-model="final_transcript" placeholder="Type your question here">
-      </div>
-      <div id="results" class="col-md-6" style="min-height: 161px;">
+      <!--<div id="results" class="col-md-6" style="min-height: 161px;">
         <div class="left">
           <button class="btn btn-info" data-ng-click="getAnswer()">Answer</button>
           <span data-ng-show="isloading3">loading...</span>
@@ -59,11 +89,11 @@
           <li ng-bind-html='toTrustedHTML( answer.answer )'>
           </li>
         </ul>
-      </div>
+      </div>-->
     </div>
 
   </div>
-  <div data-ng-show="showAddQuestionButton" class="center">
+  <!--<div data-ng-show="showAddQuestionButton" class="center">
     <h2>
        Do you want add this question to wish list questions
     </h2>  
@@ -81,5 +111,5 @@
     </h2>
     <br>
     <button class="btn btn-primary" data-ng-click="goContribute()">Click Here To Contribute</button>
-  </div>
+  </div>-->
 </div>
