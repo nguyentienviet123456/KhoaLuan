@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\server",
+    "\\server\\routes",
+    "\\src",
+    "\\src\\templates",
+    "\\src\\templates\\views"
+  ],
+  "SelectedNode": "\\src\\templates\\views\\home.html",
+  "PreviewInSolutionExplorer": false
+}
