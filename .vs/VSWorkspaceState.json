@@ -4,9 +4,13 @@
     "\\server",
     "\\server\\routes",
     "\\src",
+    "\\src\\css",
+    "\\src\\images",
+    "\\src\\js",
     "\\src\\templates",
+    "\\src\\templates\\Chrome Browser_files",
     "\\src\\templates\\views"
   ],
-  "SelectedNode": "\\src\\templates\\views\\home.html",
+  "SelectedNode": "\\src\\templates\\index.html",
   "PreviewInSolutionExplorer": false
 }
