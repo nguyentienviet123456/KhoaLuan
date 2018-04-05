@@ -7,10 +7,10 @@
     "\\src\\css",
     "\\src\\images",
     "\\src\\js",
-    "\\src\\templates",
-    "\\src\\templates\\Chrome Browser_files",
-    "\\src\\templates\\views"
+    "\\src\\js\\libs",
+    "\\src\\js\\recorder",
+    "\\src\\templates"
   ],
-  "SelectedNode": "\\src\\templates\\index.html",
+  "SelectedNode": "\\src\\js\\recorder\\recorder.js",
   "PreviewInSolutionExplorer": false
 }
